@@ -1,0 +1,282 @@
+@font-face { font-family: ubuntu; src: url('Ubuntu-C.ttf'); } 
+@font-face { font-family: acid; src: url('../fonts/acid.ttf'); } 
+@font-face { font-family: ajax; src: url('../fonts/aajax.ttf'); } 
+@font-face { font-family: abbey; src: url('../fonts/abbey.ttf'); } 
+.headee{
+	border-bottom: groove 20px #51BF9A;
+
+}
+#logo {
+
+	font-family: ajax;
+	color:white;
+
+}
+#mio {
+	display: none;
+	background: #F7B629;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	
+}
+#mio2 {
+	display: none;
+	background: #5272F2;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+#mio3 {
+	display: none;
+	background: #409FA2;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+#mio4 {
+	display: none;
+	background: #20A1CB;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+
+.empresa {
+	background: #F5BF49;
+	
+	cursor: pointer;	
+	
+}
+.empresa:hover {
+	border: solid 2px black;
+}
+.empresa a{
+	text-decoration: none;
+	color: white;
+}
+
+.e-learning:hover {
+	border: solid 2px black;
+}
+.e-learning a{
+	text-decoration: none;
+	color: white;
+}
+
+.software:hover {
+	border: solid 2px black;
+}
+.software a{
+	text-decoration: none;
+	color: white;
+}
+
+.novedad:hover {
+	border: solid 2px black;
+}
+.novedad a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+.e-learning {
+	background: #5272F2;
+	
+	cursor: pointer;
+	
+}
+.software {
+	background: #409FA2;
+	
+	cursor: pointer;
+}
+.novedad {
+	background: #20A1CB;
+	
+	cursor: pointer;
+}
+.letra_ubuntu {
+	font-family: ubuntu;
+	
+}
+.fondo{
+	background-image: url("../img/mundo_azul.jpg");
+	background-size: 100% 100%;
+}
+#logo2 {
+
+	font-family: ajax;
+	color:black;
+
+}
+#logo1 {
+
+	font-family: ajax;
+	
+
+}
+.color {
+	background: #4D994F;
+	border-color: white;
+}
+.nave {
+
+	background: #51BF9A;
+	color: white;
+}
+.margen {
+	margin: 10px;
+}
+#color_blanco{
+
+	color:white;
+}
+.boton_force {
+	width: 100%;
+}
+body
+{
+	background: #E3E5E4;
+}
+.contenido_1{
+	border-left: solid 1px white;
+}
+.menos_nitido{
+	color: #787878;
+}
+.cero_efectos{
+	text-decoration: none;
+	color: black;
+}
+.cero_efectos:hover{
+	text-decoration: none;
+	color: #78A3EE;
+}
+
+
+/* extra! */
+
+.aptitud {
+
+	background: #F5BF49;
+}
+
+.mejoras {
+	background: #5272F2;
+	color: white;
+	
+	
+}
+.mejoras a{
+	color: white;
+	text-decoration: underline;
+}
+.capacidad {
+	background: #51BF9A;
+	border-bottom-left-radius: 20px;
+}
+
+
+/*Mas extra (lugar)*/
+.circle {
+	margin: 10px;
+	
+}
+.al_lado{
+	margin:
+}
+.encuentra {
+	background: #5272F2;
+	border-top: solid 5px  #5272F2;
+	color: white;}
+
+.aux_1 {
+	margin: 10px;
+	padding: 10px;
+	border-right: dashed 2px white;
+}
+.aux_1 img{
+	margin-left: 20px;
+}
+
+
+
+/*objetivos */
+.obj1 {
+	background: #5272F2;	
+	color: white;
+}
+.obj2 {
+	background: #51BF9A;
+	
+}
+.obj3 {
+	background: #F5BF49;
+}
+
+.hr_bonis {
+	
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+
+/*tabla*/
+.tablita {
+	background: #F5BF49;
+}
+/* metodogia*/
+.metodologia{
+	background: #51BF9A;
+	}
+.aux2 {
+	text-align: center; 
+	border-bottom: groove 4px white;
+	color: white;
+	padding: 5px;
+	
+}
+footer {
+	background: #777373;
+	text-align: center;
+	height: 150px;
+	
+}
+footer a{
+	color: white;
+}
+footer a:hover{
+	color: white;
+	
+}
+
+/* Ingresos*/
+
+.ingresos {
+	background: white;
+}
+.cabeza {
+	background: #EEECEC;
+}
+.proba {
+	background: #55E4B4;
+	
+}
+.mode1 {
+	border-right: dashed 1px #55E4B4;
+}
+.especial{
+	background: transparent;
+	border: 0px;
+	color: #51BF9A;
+}
+.especial:hover {
+	text-decoration: underline;
+}
