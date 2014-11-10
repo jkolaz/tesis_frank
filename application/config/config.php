@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.jkolaz.com/frank';
+$config['base_url']	= 'http://localhost/frank';
 
 /*
 |--------------------------------------------------------------------------
