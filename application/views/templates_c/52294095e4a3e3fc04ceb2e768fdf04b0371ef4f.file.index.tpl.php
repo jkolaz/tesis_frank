@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-11-12 03:40:43
+         compiled from "application\views\templates\index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:322795462c54506c4e6-51602834%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '52294095e4a3e3fc04ceb2e768fdf04b0371ef4f' => 
+    array (
+      0 => 'application\\views\\templates\\index.tpl',
+      1 => 1415760037,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '322795462c54506c4e6-51602834',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5462c54557c8b2_43656127',
+  'variables' => 
+  array (
+    'BASE_URL' => 0,
+  ),
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5462c54557c8b2_43656127')) {function content_5462c54557c8b2_43656127($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,21 +33,36 @@
         <meta name="author" content="">
         <title>Quimkat</title>
         <!-- Bootstrap core CSS -->
-        <link href="{$BASE_URL}css/bootstrap.min.css" rel="stylesheet">
-        <link href="{$BASE_URL}css/css.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/css.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="{$BASE_URL}css/dashboard.css" rel="stylesheet">
+        <link href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+css/dashboard.css" rel="stylesheet">
 
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-        <script src="{$BASE_URL}js/ie-emulation-modes-warning.js"></script>
-        <script src="{$BASE_URL}js/ie10-viewport-bug-workaround.js"></script>
+        <!--[if lt IE 9]><?php echo '<script'; ?>
+ src="../../assets/js/ie8-responsive-file-warning.js"><?php echo '</script'; ?>
+><![endif]-->
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+js/ie-emulation-modes-warning.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+js/ie10-viewport-bug-workaround.js"><?php echo '</script'; ?>
+>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <?php echo '<script'; ?>
+ src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"><?php echo '</script'; ?>
+>
+          <?php echo '<script'; ?>
+ src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"><?php echo '</script'; ?>
+>
         <![endif]-->
     </head>
     <body>
@@ -899,7 +939,8 @@ Leyenda: </br>
       <div class="modal-body ingresos">
 	<div class="row">
    <!-- FORM login--> 
-        <form action="{$BASE_URL}seguridad/validar/login" method="post">
+        <form action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+seguridad/validar/login" method="post">
             <div class="col-md-6 mode1">
                 <div class="input-group" style="margin-bottom: 5px;">
                     <!-- usuario --> 		 
@@ -950,7 +991,8 @@ Leyenda: </br>
       <div class="modal-body">
        <div class="row">
 		<div class="col-md-6 mode1">
-		<form ACTION="{$BASE_URL}usuario/usuario/insertar" METHOD="post">	
+		<form ACTION="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+index.php/usuario/usuario/insertar" METHOD="post">	
 			<div class="input-group" style="margin-bottom: 5px;">
            			  <span class="input-group-addon proba">@</span>
            			   <input name="mail_add" type="email" class="form-control" placeholder="Tu correo">	
@@ -1053,10 +1095,15 @@ Leyenda: </br>
 
 
 
-   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    {literal}
+   <?php echo '<script'; ?>
+ src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"><?php echo '</script'; ?>
+> 
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+    
 $(function(){
 	
      var a = 'a[href*=#]';
@@ -1086,16 +1133,26 @@ $(function(){
    });
 
 });
-{/literal}
 
-</script>
+
+<?php echo '</script'; ?>
+>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{$BASE_URL}js/bootstrap.min.js"></script>
-    <script src="{$BASE_URL}js/docs.min.js"></script>
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+js/docs.min.js"><?php echo '</script'; ?>
+>
   </body>
 </html>
 
+<?php }} ?>

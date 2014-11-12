@@ -24,33 +24,33 @@ class usuario extends CI_Controller{
                                             $insertar->nombre = $request['nombre_add'];
                                             $insertar->apellido = $request['apellido_add'];
                                             $this->usuario_model->insert($insertar);
-                                            redirect('index');
+                                            redirect(base_url());
                                         }else{
-                                            redirect('index');
+                                            redirect(base_url());
                                         }
                                     }else{
-                                        redirect('index');
+                                        redirect(base_url());
                                     }
                                 }else{
-                                    redirect('index');
+                                    redirect(base_url());
                                 }
                             }else{
-                                redirect('index');
+                                redirect(base_url());
                             }
                         }else{
-                            redirect('index');
+                            redirect(base_url());
                         }
                     }else{
-                        redirect('index');
+                        redirect(base_url());
                     }
                 }else{
-                    redirect('index');
+                    redirect(base_url());
                 }
             }else{
-                redirect('index');
+                redirect(base_url());
             }
         }else{
-            redirect('index');
+            redirect(base_url());
         }
     }
 }

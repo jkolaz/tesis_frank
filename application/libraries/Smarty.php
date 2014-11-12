@@ -12,37 +12,36 @@
 require_once( BASEPATH.'libs/Smarty-3.1.21/Smarty.class.php' );
 
 class CI_Smarty extends Smarty {
+    /* posicionamiento */
+    var $maintpl = "main";
+    var $pg_title = "PANEL | Tesis ";
+    function CI_Smarty(){
+        parent::Smarty();
 
-	function CI_Smarty()
-	{
-		parent::Smarty();
+        $this->compile_dir = APPPATH . "views/templates_c";
+        $this->template_dir = APPPATH . "views/templates";
+        $this->assign( 'APPPATH', APPPATH );
+        $this->assign( 'BASEPATH', BASEPATH );
 
-		$this->compile_dir = APPPATH . "views/templates_c";
-		$this->template_dir = APPPATH . "views/templates";
-		$this->assign( 'APPPATH', APPPATH );
-		$this->assign( 'BASEPATH', BASEPATH );
+        log_message('debug', "Smarty Class Initialized");
+    }
 
-		log_message('debug', "Smarty Class Initialized");
-	}
+    function __construct(){
+        parent::__construct();
+        $this->assign("title",  $this->pg_title);
+        $this->compile_dir = APPPATH . "views/templates_c";
+        $this->template_dir = APPPATH . "views/templates";
+        $this->assign( 'APPPATH', APPPATH );
+        $this->assign( 'BASEPATH', BASEPATH );
 
-	function __construct()
-	{
-		parent::__construct();
+        // Assign CodeIgniter object by reference to CI
+        if ( method_exists( $this, 'assignByRef') ){
+                $ci =& get_instance();
+                $this->assignByRef("ci", $ci);
+        }
 
-		$this->compile_dir = APPPATH . "views/templates_c";
-		$this->template_dir = APPPATH . "views/templates";
-		$this->assign( 'APPPATH', APPPATH );
-		$this->assign( 'BASEPATH', BASEPATH );
-
-		// Assign CodeIgniter object by reference to CI
-		if ( method_exists( $this, 'assignByRef') )
-		{
-			$ci =& get_instance();
-			$this->assignByRef("ci", $ci);
-		}
-
-		log_message('debug', "Smarty Class Initialized");
-	}
+        log_message('debug', "Smarty Class Initialized");
+    }
 
 
 	/**
@@ -88,5 +87,15 @@ class CI_Smarty extends Smarty {
 			return $this->fetch($template);
 		}
 	}
+    public function show_page($page_html, $cache_id = "") {
+        $this->include_template("contentheader", "inc/viewheader");
+        $html = $this->fetch($page_html, $cache_id);
+        $this->assign("content_main", $html);
+    }
+        
+    public function include_template($var, $template, $cache_id = "") {
+        $html = $this->fetch($template . ".tpl", $cache_id);
+        $this->assign($var, $html);
+    }
 }
 // END Smarty Class
