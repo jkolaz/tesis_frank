@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-11-12 06:19:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-02 05:41:56
          compiled from "application\views\templates\admin\inc\menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:235165462e447c0eaa6-75520035%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cf4c6929caf32f12abfee148f7e2761a8ad6f377' => 
     array (
       0 => 'application\\views\\templates\\admin\\inc\\menu.tpl',
-      1 => 1415769596,
+      1 => 1417495297,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'c_home' => 0,
     'c_about' => 0,
+    'login' => 0,
+    'c_login_o' => 0,
     'c_contact' => 0,
     'c_login' => 0,
     'BASE_URL' => 0,
@@ -44,6 +46,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ><a href="#">Home</a></li>
                 <li <?php echo $_smarty_tpl->tpl_vars['c_about']->value;?>
 ><a href="#">About</a></li>
+                <?php if ($_smarty_tpl->tpl_vars['login']->value==1) {?>
+                <li <?php echo $_smarty_tpl->tpl_vars['c_login_o']->value;?>
+><a href="#">Panel</a></li>
+                <?php }?>
                 <li <?php echo $_smarty_tpl->tpl_vars['c_contact']->value;?>
 ><a href="#">Contact</a></li>
             </ul>

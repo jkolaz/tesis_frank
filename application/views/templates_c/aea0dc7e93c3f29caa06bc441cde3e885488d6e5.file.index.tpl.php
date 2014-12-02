@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-11-12 05:58:10
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2014-12-02 04:14:32
          compiled from "application\views\templates\admin\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:281115462d093d8fce4-09875529%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'aea0dc7e93c3f29caa06bc441cde3e885488d6e5' => 
     array (
       0 => 'application\\views\\templates\\admin\\index.tpl',
-      1 => 1415768286,
+      1 => 1417490063,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <h2>PANEL DE ADMINISTRADOR</h2>
             </div>
             <p>
-            This is a sample application for the <a href="http://phalconphp.com">FRANK DE LA ROSA</a>. We expect to implement as many features as possible to show how the framework works and its potential.
+                This is a sample application for the <a target="_blank" href="https://www.facebook.com/frank.izrael.delarosa">FRANK DE LA ROSA</a>. We expect to implement as many features as possible to show how the framework works and its potential.
             Please write us if you have any feedback or comments. Feel free to clone the code of this application <a href="https://github.com/phalcon/invo">here</a>
             .Thanks!.
             </p>

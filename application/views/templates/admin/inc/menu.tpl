@@ -13,6 +13,9 @@
             <ul class="nav navbar-nav navbar-left">
                 <li {$c_home}><a href="#">Home</a></li>
                 <li {$c_about}><a href="#">About</a></li>
+                {if $login eq 1}
+                <li {$c_login_o}><a href="#">Panel</a></li>
+                {/if}
                 <li {$c_contact}><a href="#">Contact</a></li>
             </ul>
         </div>
