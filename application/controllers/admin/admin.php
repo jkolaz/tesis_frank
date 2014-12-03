@@ -22,6 +22,7 @@ class admin extends CI_Controller{
         $this->smarty->include_template("menu", "admin/inc/menu");
         $this->smarty->include_template("footer", "admin/inc/footer");
         $this->load->model('admin/admin_model');
+        $this->load->model('seguridad/usuario_model','usuario');
     }
     public function index(){
         $this->smarty->display('admin/index.tpl');
@@ -78,19 +79,5 @@ class admin extends CI_Controller{
         $this->smarty->include_template("sub_menu", "admin/inc/menu_login");
         $this->smarty->display('admin/panel.tpl');
     }
-    public function usuario(){
-        $this->smarty->assign("active1","");
-        $this->smarty->assign("active2","active");
-        $this->smarty->assign("active3","");
-        $arrSession = $this->session->userdata;
-        $objAdmin = $this->admin_model->getAdmin();
-        $this->smarty->assign('objAdmin', $objAdmin);
-        $this->smarty->assign("c_home", '');
-        $this->smarty->assign("c_login_o", 'class="active"');
-        $this->smarty->include_template("menu", "admin/inc/menu");
-        $this->smarty->assign('usuario',$arrSession['username']);
-        $this->smarty->assign('titulo','ADMINISTRADORES');
-        $this->smarty->include_template("sub_menu", "admin/inc/menu_login");
-        $this->smarty->display('admin/panel.tpl');
-    }
+    
 }

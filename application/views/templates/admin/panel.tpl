@@ -3,9 +3,6 @@
     {$head}
     <body>
         {$menu}
-        <scritp>
-            
-        </scritp>
         <div class="container">
             <div class="alert alert-success">Bienvenido: Sr(a) {$usuario}</div>
             {$sub_menu}
@@ -27,7 +24,7 @@
                     <tbody>
                         {section name=admin loop=$objAdmin}
                         <tr>
-                            <td>51001</td>
+                            <td>{$smarty.section.admin.index+1}</td>
                             <td>{$objAdmin[admin]->apellido}</td>
                             <td>{$objAdmin[admin]->nombre}</td>
                             <td>{$objAdmin[admin]->descripcion}</td>
