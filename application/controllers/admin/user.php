@@ -69,7 +69,7 @@ class user extends CI_Controller{
             $update->apellidos = $request['apellidos'];
             $update->telefono = $request['telefono'];
             $update->correo = $request['correo'];
-            $update->user = $request['user'];
+            $update->user = $request['usuario'];
             $this->usuario->editar($id, $update);
         }
         redirect($this->_url.'admin/user/usuario');

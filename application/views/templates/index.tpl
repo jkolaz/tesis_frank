@@ -35,7 +35,7 @@
                         <span class="icon-bar color"></span>
                         <span class="icon-bar color"></span>
                     </button>
-                    <a class="navbar-brand" id="logo" href="index.html">Quimkat</a>
+                    <a class="navbar-brand" id="logo" href="{$URL}">Quimkat</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -132,9 +132,9 @@
                 </div>
                 <div class="col-md-4 mejoras letra_ubuntu" style="text-align: center;"> 
                     <div class="circle" style="margin-top: 10px">
-                        <img class="img-circle" src="img/estudiante6.jpg" alt="Quimica" style="width: 140px; height: 140px;">
-                        <img class="img-circle" src="img/estudiante4.jpg" alt="Quimica" style="width: 140px; height: 140px;">
-                        <img class="img-circle" src="img/estudiante5.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+                        <img class="img-circle" src="{$BASE_URL}img/estudiante6.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+                        <img class="img-circle" src="{$BASE_URL}img/estudiante4.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+                        <img class="img-circle" src="{$BASE_URL}img/estudiante5.jpg" alt="Quimica" style="width: 140px; height: 140px;">
                     </div>
                     <div class="al_lado">
                         <h3 style="text-align: center;">¿Qué estas esperando?</h3>
@@ -161,9 +161,9 @@
                 </div>
                 <div class="col-md-4 capacidad letra_ubuntu">
     <div class="circle" style="margin-top: 10px">
-       <img class="img-circle" src="img/docente.jpg" alt="Quimica" style="width: 140px; height: 140px;">
-	<img class="img-circle" src="img/estudiante3.jpg" alt="Quimica" style="width: 140px; height: 140px;">
-<img class="img-circle" src="img/colegio.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+       <img class="img-circle" src="{$BASE_URL}img/docente.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+	<img class="img-circle" src="{$BASE_URL}img/estudiante3.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+<img class="img-circle" src="{$BASE_URL}img/colegio.jpg" alt="Quimica" style="width: 140px; height: 140px;">
       </div>
       <div class="al_lado"><h4 class="page_header">Mejoras academicas </br> <small> Se propone agilizar y estandarizar el curso de quimica para los jovenes</small></h4> 
       <p>Se agilizan los temas buscando siempre las mejores competencias y las mejoras formulaciones de problemas y teoría moderna de desarrollo comunitario</p>
@@ -194,8 +194,8 @@
     <h3>Muchas gracias: IEP SAN JUAN DE DIOS; sin su ayuda esto no hubiera sido posible.</h3>
     <div class="row">
       <div class="col-md-4 aux_1">
-        <img src="img/colegio.jpg" class="img-circle" style="width: 140px; height: 140px;">
-	<img class="img-circle" src="img/estudiante6.jpg" alt="Quimica" style="width: 140px; height: 140px;">
+        <img src="{$BASE_URL}img/colegio.jpg" class="img-circle" style="width: 140px; height: 140px;">
+	<img class="img-circle" src="{$BASE_URL}img/estudiante6.jpg" alt="Quimica" style="width: 140px; height: 140px;">
 	<h3>10 Razones para confiar en nosotros.</h3>
         <ol>
         <li> Clases interactivas</li>
@@ -899,7 +899,7 @@ Leyenda: </br>
       <div class="modal-body ingresos">
 	<div class="row">
    <!-- FORM login--> 
-        <form action="{$BASE_URL}seguridad/validar/login" method="post">
+        <form action="{$URL}seguridad/validar/login" method="post">
             <div class="col-md-6 mode1">
                 <div class="input-group" style="margin-bottom: 5px;">
                     <!-- usuario --> 		 
@@ -950,7 +950,7 @@ Leyenda: </br>
       <div class="modal-body">
        <div class="row">
 		<div class="col-md-6 mode1">
-		<form ACTION="{$BASE_URL}usuario/usuario/insertar" METHOD="post">	
+		<form ACTION="{$URL}usuario/usuario/insertar" METHOD="post">	
 			<div class="input-group" style="margin-bottom: 5px;">
            			  <span class="input-group-addon proba">@</span>
            			   <input name="mail_add" type="email" class="form-control" placeholder="Tu correo">	

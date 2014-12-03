@@ -1,9 +1,10 @@
 <?php
 class validar extends CI_Controller{
-
+    public $_url;
     public function __construct() {
         parent::__construct();
         $this->load->model('seguridad/usuario_model');
+        $this->_url = base_url()._PREFIJO;
     }
 
     public function login(){
@@ -22,7 +23,7 @@ class validar extends CI_Controller{
                         'nombre' => $user[0]->nombre,
                         'correo' => $user[0]->correo);
                     $this->session->set_userdata($data);
-                    redirect(base_url().'principal/principal/panel');
+                    redirect($this->_url.'principal/principal/panel');
                 }else{
                     redirect(base_url());
                 }

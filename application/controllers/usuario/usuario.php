@@ -1,8 +1,10 @@
 <?php
 class usuario extends CI_Controller{
+    public $_url;
     public function __construct() {
         parent::__construct();
         $this->load->model('seguridad/usuario_model');
+        $this->_url = base_url()._PREFIJO;
     }
     public function insertar(){
         $request = $this->input->post();

@@ -1,9 +1,11 @@
 <?php
 class principal extends CI_Controller{
+    public $_url;
     public function __construct() {
         parent::__construct();
         $this->smarty->assign("BASE_URL", base_url());
         $this->security();
+        $this->_url = base_url()._PREFIJO;
     }
     public function panel(){
         
@@ -14,7 +16,7 @@ class principal extends CI_Controller{
         if($arrSession['idUsuario']>0 && isset($arrSession['idUsuario'])){
             $this->smarty->assign("USER",$arrSession['nick']);
         }else{
-            redirect('index');
+            redirect(base_url());
         }
     }
 }
