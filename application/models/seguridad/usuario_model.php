@@ -84,4 +84,27 @@ class usuario_model extends CI_Model{
         }
         $this->db->update(self::$tabla, $data, array('id' => $id));
     }
+    public function agregar($insertar){
+        $data = array();
+        if(isset($insertar->nombre) && $insertar->nombre!=""){
+            $data['nombre'] = $insertar->nombre;
+        }
+        if(isset($insertar->apellidos) && $insertar->apellidos!=""){
+            $data['apellidos'] = $insertar->apellidos;
+        }
+        if(isset($insertar->correo) && $insertar->correo!=""){
+            $data['correo'] = $insertar->correo;
+        }
+        if(isset($insertar->user) && $insertar->user!=""){
+            $data['user'] = $insertar->user;
+        }
+        if(isset($insertar->telefono) && $insertar->telefono!=""){
+            $data['telefono'] = $insertar->telefono;
+        }
+        if(isset($insertar->clave) && $insertar->clave!=""){
+            $data['pass'] = md5($insertar->clave);
+        }
+        $data['estado'] = 1;
+        $this->db->insert(self::$tabla, $data);
+    }
 }

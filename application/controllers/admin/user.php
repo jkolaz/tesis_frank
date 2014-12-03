@@ -36,8 +36,21 @@ class user extends CI_Controller{
         $this->smarty->assign('titulo','ALUMNOS');
         $this->smarty->display('admin/search_user.tpl');
     }
-    public function newUser(){
-        
+    public function newUser($procesar=0){
+        $this->smarty->assign('procesar', $procesar);
+        $this->smarty->display('admin/new_user.tpl');
+    }
+    public function agregar(){
+        $request = $this->input->post();
+        $insert = new stdClass();
+        $insert->nombre = $request['nombre'];
+        $insert->apellidos = $request['apellidos'];
+        $insert->telefono = $request['telefono'];
+        $insert->correo = $request['correo'];
+        $insert->user = $request['usuario'];
+        $insert->clave = $request['clave'];
+        $this->usuario->agregar($insert);
+        redirect($this->_url.'admin/user/usuario');
     }
     public function listar(){
         $request = $this->input->post();
