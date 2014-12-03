@@ -58,7 +58,7 @@
                     <li class="divider"></li>
                     <li><a href="#">Editar Perfil</a></li>
                     <li class="divider"></li>
-                    <li><a href="{$BASE_URL}index.php/seguridad/validar/logout">Cerrar sesión</a>
+                    <li><a href="{$URL}seguridad/validar/logout">Cerrar sesión</a>
 
                     </li>
                   </ul>

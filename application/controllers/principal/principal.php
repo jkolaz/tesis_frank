@@ -6,6 +6,7 @@ class principal extends CI_Controller{
         $this->smarty->assign("BASE_URL", base_url());
         $this->security();
         $this->_url = base_url()._PREFIJO;
+        $this->smarty->assign("URL", $this->_url);
     }
     public function panel(){
         
